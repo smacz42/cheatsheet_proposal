@@ -1,0 +1,148 @@
+\documentclass[]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{xfrac}
+
+
+\begin{document}
+\title{Cheatsheet Feedback}
+\author{smacz}
+\date{\today}
+\maketitle
+
+\section{Rationale}
+\label{Rationale}
+
+We're here to help you cheat! We want to provide the best cheatsheets to you, ones that you can actually use! Be that python, vim, digital rights, whatever. However, you have to let us know which ones you would like to see. Please jot down the name of a cheatsheet that you would like to see available through OSC or give a '+1' to one that has already been listed.
+
+
+\section{Suggestions}
+\label{Suggestions}
+
+Please let us know below which cheatsheets you would like to see. Please only add one '+1' mark per cheatsheet per person.
+
+\subsection{Example}
+\label{Example}
+\newcount\tmpnum
+\def\tallymarks#1{\leavevmode \lower1bp\vbox to9bp{}%
+   \tmpnum=#1
+   \loop \ifnum\tmpnum<5 \kern1bp \tallynum\tmpnum \else \tallyV \fi
+         \advance\tmpnum by-5
+         \ifnum\tmpnum>0 \repeat
+}
+\def\tallynum#1{\bgroup\tmpnum=#1\relax
+   \loop \ifnum\tmpnum>0
+         \kern1bp \tallyI \kern1bp
+         \advance\tmpnum by-1
+         \repeat
+   \egroup
+}
+\def\tallyI{\pdfliteral{q .5 w 0 -1 m 0 8 l S Q}}
+\def\tallyV{\kern1bp\pdfliteral{q .5 w -1 0 m 9 7 l S Q}\tallynum4\kern1bp }
+
+\begin{tabular}{|l|l|}
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{Name:}} & \mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{+1: }} \\
+\hline
+    \mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{Proposed Cheatsheet Name}} & \mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{\tallymarks{17}}} \\
+\hline
+\end{tabular} \\
+
+\subsection{Proposals}
+\label{Proposals}
+\begin{tabular}{|l|l|}
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{Name:}} & \mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{+1: }} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Vim}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Emacs}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Python}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Bash}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Declaration of Cyberspace}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Git}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{LaTeX}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Ruby}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Network Administration}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=150pt,name=t1]{Computer Assembly}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{Java}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\end{tabular} \\
+
+\begin{tabular}{|l|l|}
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{Name:}} & \mbox{\TextField[maxlen=100,align=0,height=15pt,width=150pt,name=t1]{+1: }} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} & \mbox{\TextField[maxlen=100,align=0,height=20pt,width=250pt,name=t1]{}} \\
+\hline
+\end{tabular} \\
+
+\end{document}
